@@ -4,7 +4,7 @@ from django.db import models
 
 class Car(models.Model):
 
-    marca = CharField(max_length=200)
-    modelo = CharField(max_length=200)
-    cor = CharField(max_length=200)
-    ano = IntegerField(default=None)
+    marca = models.CharField(max_length=200)
+    modelo = models.CharField(max_length=200)
+    cor = models.CharField(max_length=200)
+    ano = models.IntegerField(default=None)
